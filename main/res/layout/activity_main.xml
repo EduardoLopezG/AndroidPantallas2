@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iniciobackground"
+    tools:context="com.example.eduardo.pantallasproyecto2.MainActivity">
+
+    <Button
+        android:layout_width="@dimen/button_main_size"
+        android:layout_height="wrap_content"
+        android:text="Habitaciones"
+        android:id="@+id/btn_Romms"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:layout_width="@dimen/button_main_size"
+        android:layout_height="wrap_content"
+        android:text="Reservación"
+        android:id="@+id/btn_Reservation"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/btn_Romms"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Reservation"
+        android:text="Conócenos"
+        android:id="@+id/btn_MeetUs"/>
+
+</RelativeLayout>

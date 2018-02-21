@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eduardo.pantallasproyecto2.ResrvationActivity">
+
+    <TextView
+        android:id="@+id/text_DateIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Entrada:"
+        android:textSize="@dimen/text_reservation_size"/>
+    <EditText
+        android:id="@+id/edt_DateIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_DateIn"/>
+
+    <TextView
+        android:id="@+id/text_DateOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Salida:"
+        android:textSize="@dimen/text_reservation_size"
+        android:layout_below="@+id/edt_DateIn"/>
+    <EditText
+        android:id="@+id/edt_DateOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_DateOut"/>
+
+    <TextView
+        android:id="@+id/text_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habitación:"
+        android:textSize="@dimen/text_reservation_size"
+        android:layout_below="@id/edt_DateOut"/>
+    <Spinner
+        android:id="@+id/spn_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_room">
+        Seleccione...
+    </Spinner>
+
+    <TextView
+        android:id="@+id/text_numberpersons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de Personas:"
+        android:textSize="@dimen/text_reservation_size"
+        android:layout_below="@+id/spn_room"/>
+    <Spinner
+        android:id="@+id/spn_persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_numberpersons">
+        Seleccione...
+    </Spinner>
+
+    <TextView
+        android:id="@+id/text_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre y Apellidos:"
+        android:textSize="@dimen/text_reservation_size"
+        android:layout_below="@+id/spn_persons"/>
+    <EditText
+        android:id="@+id/edt_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_names"/>
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"
+        android:textSize="@dimen/text_reservation_size"
+        android:layout_below="@+id/edt_names"/>
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_phone"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail:"
+        android:textSize="@dimen/text_reservation_size"
+        android:layout_below="@+id/edt_phone"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_email"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email"
+        android:text="Enviar"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

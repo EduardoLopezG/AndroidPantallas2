@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_reservation_size">20dp</dimen>
+    <dimen name="email_search_reservation">25dp</dimen>
+    <dimen name="button_main_size">190dp</dimen>
+</resources>
